@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.subd.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:elevation="1dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etn"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/background_light"
+                android:textSize="20sp"
+                tools:text="Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/etc"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/background_light"
+                android:textSize="20sp"
+                tools:text="Cost" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:elevation="1dp">
+
+            <Button
+                android:text="Add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ba"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_light"
+                android:textSize="20sp" />
+
+            <Button
+                android:text="Upprage list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bu"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_blue_bright"
+                android:textSize="20sp" />
+
+            <Button
+                android:text="Sum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bs"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@android:color/holo_green_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/ListView" />
+
+    </LinearLayout>
+
+</RelativeLayout>
